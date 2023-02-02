@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(206, 200, 190);
+}
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch-holder{
+    width:500px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.watch-head{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid salmon;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    padding-top: 10%;
+    height: 90%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto
+}
+.time{
+    font-size: 30px;
+    margin-right: 0.2rem;
+    height: 40%;
+    background-color: rgb(90, 78, 78);
+    border-radius: 3px;
+    font-family: arial;
+    color:rgb(209, 130, 28);
+}
+.mid{
+   font-size: 30px;
+    margin-right: 0.2rem;
+    height: 50%;
+    border-radius: 3px;
+    color: purple;
+    font-weight: bolder;
+}
+
+.am-pm{
+    color: brown;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: arial;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+}
+.hands{
+     background-color:rgb(161, 114, 51);
+     align-items: center;
+      height:70px ;
+    width: 175px;
+      position: absolute;
+        top:auto;
+        
+}
+.watch-left-hand{
+    left: 0;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+   }
+.watch-right-hand{
+    right: 0;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.cont-hands{
+    content: '';
+    position: absolute;
+    left: 20%;
+    width: 80px;
+    height: 50%;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-hands::before{
+    top: 0;
+    left: 0;
+    content: '';
+    position:inherit;
+    width: 30px;
+    border-radius:50%;
+    height: 100%;
+    background-color:rgb(199, 56, 92);
+}
+.cont-hands::after{
+    top: 0;
+    right: 0;
+    content: '';
+    border-radius:50%;
+    position:inherit;
+    width: 30px;
+    height: 100%;
+    background-color: purple;
+}
